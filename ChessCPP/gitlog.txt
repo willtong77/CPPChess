@@ -1,0 +1,757 @@
+commit cce19b2beeeb53077197bc720e0f232568d0d6aa
+Merge: 618686d f13fc77
+Author: Will Tong <wtong10@jh.edu>
+Date:   Thu Apr 29 02:56:12 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit 618686d27cd8e765cd67aae38b53a97364edf8ba
+Author: Will Tong <wtong10@jh.edu>
+Date:   Thu Apr 29 02:55:54 2021 -0400
+
+    fixed floating point error in Game.cpp and incorrect file reading in Game.cpp
+
+commit f13fc77aad4ddb3eae0c84e51671c33222dbfdca
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 23:39:39 2021 -0400
+
+    added if statement that returns false if numerator/denominator variables = 0 once horizontal & vertical movement possibilities have been exhausted, which indicates an illegal move + could result in an arithmetic/floating point exception further down in the function if division by 0 was not stopped earlier
+
+commit 2097562a3c678062cb626576d38dc6d53bd32f27
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 22:49:15 2021 -0400
+
+    renamed uml file
+
+commit 95d6c762afdbd8c7ea7cd6db4a1442c01ac07759
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 22:47:19 2021 -0400
+
+    uml added
+
+commit ff0e96189702691827311d3ad1157b09b796d260
+Author: John Han <jhan62@jhu.edu>
+Date:   Wed Apr 28 19:19:50 2021 -0700
+
+    accounted display for mystery piece
+
+commit 9b32d73a2abfd8fb2b95713f0afd9d5800efa0be
+Author: John Han <jhan62@jhu.edu>
+Date:   Wed Apr 28 19:15:48 2021 -0700
+
+    pimped up board::display()
+
+commit 877299c369da967274b3bece981fd2410a9f2d3f
+Author: John Han <jhan62@jhu.edu>
+Date:   Wed Apr 28 18:37:10 2021 -0700
+
+    changed display()
+
+commit a9aeef2ee10e80323a5d52930e7fdb9e5f8d2793
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 19:53:43 2021 -0400
+
+    fixed logic error in in_mate
+
+commit 3b0dc770d59d16d850aacacb8db528c1043c17ce
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 19:39:58 2021 -0400
+
+    added implementation for piece promotion
+
+commit 0aed9d6708ae5aa93048e75476831995558f8ea6
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 19:30:29 2021 -0400
+
+    switched variable order of one part of if statement condition + adjusted spacing/formatting of legal_move_shape
+
+commit da02ea8810fe956ff5e822b88a0b282ddf83d244
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 19:16:02 2021 -0400
+
+    changed logic in Pawn.cpp to allow black pawns to move a single square forward when in row 7, changed logic of in_check for Game.cpp to get the location of the king
+
+commit ebd9f7b1265cd119241d1cf86ea1a3584f92067f
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 14:49:50 2021 -0400
+
+    fixed initialization of variable in every if statement of if branch in is_blocked, which we use to increment in our for loops
+
+commit ebcc5d375482367f8d4f0731559fdec1566aeb4b
+Merge: 28dbdae 74a3c2f
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 14:16:25 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit 28dbdae0e0b6103dab6c2d7c0063eda1f4ece979
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 14:16:14 2021 -0400
+
+    changed logic/implementation of is_blocked
+
+commit 74a3c2f211aa50951f10ecabaaa0470fa5c108a2
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 13:53:54 2021 -0400
+
+    corrected if-statement condition that incorrectly checked whether pawns were/were not in the 2nd/7th row on the board
+
+commit af6ceee664b1baf89e40b5a53bf052bd62100120
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 13:17:33 2021 -0400
+
+    changed case in make_move for checking legal_move_shape and legal_capture_shape
+
+commit c9c312bd5792a468395405fa261cabf3a6b5fbde
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 13:12:31 2021 -0400
+
+    fixed error in make_move to avoid calling to_ascii() on a nullptr and updating the position of a piece using map indexing
+
+commit 310aa8513b7697e6268fda83783e58a67df88c5b
+Author: Will Tong <wtong10@jh.edu>
+Date:   Wed Apr 28 12:43:34 2021 -0400
+
+    minor changes in Game.cpp, fixed minor formatting error in main.cpp, changed is_valid_designator in Board.cpp to include pawns
+
+commit cc9eb48df7a700489119a9f0fd5cb74fa0eeaa38
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 02:43:23 2021 -0400
+
+    deleted newly-created if statement that handled possible arithmetic exceptions, as i actually do not think it was necessary (vertical/horizontal movements of 0 are handled in 1st if statement and 2nd else-if statement already)
+
+commit feaf6a2e0a0882b1f83ad36fd9ca0df3b99afcdf
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 02:36:07 2021 -0400
+
+    added if statement that returns false if numerator/denominator variables = 0 once horizontal & vertical movement possibilities have been exhausted, which represents an illegal move + would produce an arithmetic exception further down in function if division by 0 was not stopped earlier
+
+commit 956815aaf17a8d9231960edd59af1e73979ffa5f
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 28 02:31:06 2021 -0400
+
+    added if statement that returns false if numerator/denominator variables = 0, which represents an illegal move + would produce an arithmetic exception further down in function if division by 0 was not stopped earlier
+
+commit bbd34cdd060ed19520a7ddc32efb4242a864b90a
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 20:10:32 2021 -0700
+
+    tried playing with Board::add_piece()
+
+commit 339bb6877f0854898d9756d501e4eda7d38b36f1
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 20:01:20 2021 -0700
+
+    fixed Board::display()
+
+commit 681ef43c756f2e4f1c7bbf1448fa9ab6a65faa02
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 14:35:53 2021 -0700
+
+    implemented a set is_white_turn
+
+commit dcb78a9c8caec733d5c5a3be84ab1cfd2f087a12
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:26:45 2021 -0400
+
+    added declaration of the overridden legal_capture_shape function
+
+commit 2fd42934e4d80c28aa1a8e1b87c667adce549cf2
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:25:59 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit 047e054888ebebb6822f31232e0b1b96d338eae5
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:25:51 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit 7d670487938bdcd519b9c0004e8d22d3edce1580
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:25:39 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, declared and initialized necessary variables into legal_capture_shape, among several compile-time error debugging changes
+
+commit 418edf56079bd6eed83b0caeec99e96c74665d5a
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:25:02 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit cf63ffef28de24a5ec333d8da13a6f2c3f277be5
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:24:52 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit 780f4e9ca839aaeb4ab2c1142691774552d12a36
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:24:10 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit f48b784a322ad1cfb7e89c9cfee0485241f61819
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 27 17:24:00 2021 -0400
+
+    added #include <cmath>, namespace Chess {, deleted the 'override' keyword, among several compile-time error debugging changes
+
+commit 8ecaadcc9bdc937fed389186fde80ee27fafcf3b
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 14:26:12 2021 -0700
+
+    fixed Game::operator>>
+
+commit 605f9e8398cb2f00291625ede38438ba89116270
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 14:09:19 2021 -0700
+
+    final addition to Game::>>
+
+commit 97bc21d789e2f38c14d3319978334794d7b68750
+Author: Will Tong <wtong10@jh.edu>
+Date:   Tue Apr 27 17:08:08 2021 -0400
+
+    added helper functions for istream and fixed errors in istream function
+
+commit beb9cc9b0d2325c8fde5ede76c40e28427ed17f0
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 13:47:59 2021 -0700
+
+    fixed Board::display() errors
+
+commit afc1002bb5e71fabe8e7aa94925c51e6e90d57aa
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 13:47:20 2021 -0700
+
+    fixed Board::display() errors
+
+commit 2b233dcf683a36016b14a8fdf704c3466c25b1cb
+Author: Will Tong <wtong10@jh.edu>
+Date:   Tue Apr 27 16:44:57 2021 -0400
+
+    minor debugging in Board.cpp. Now compiles with only errors in terminal calls
+
+commit 575d78fe3b203312e3d797619d5395fda63069f5
+Author: Will Tong <wtong10@jh.edu>
+Date:   Tue Apr 27 16:17:06 2021 -0400
+
+    added comment for remove_piece() function
+
+commit 2c931e0a9702e78509a4989583d9021757e20bd5
+Author: Will Tong <wtong10@jh.edu>
+Date:   Tue Apr 27 16:05:34 2021 -0400
+
+    fixed minor compilation errors, still have error in istream operator
+
+commit 92a3de866c914f8ba1fb5e093d4b6bc23546e4df
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 12:56:07 2021 -0700
+
+    erased amigo in Game.cpp
+
+commit 18b1452e9c795bbadc0656d3922134e86f1ae0cf
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 27 12:54:39 2021 -0700
+
+    erased amigo in Game.cpp
+
+commit 4f66d4b98b7881358d7760a9c36c7f1e5d397cf8
+Author: Will Tong <wtong10@jh.edu>
+Date:   Tue Apr 27 15:37:50 2021 -0400
+
+    changed remove_piece() in Board.cpp to deallocate Piece* memory if it exists. Changed some logic of functions in Game.cpp and removed useless variables/cleaned up code
+
+commit d71c91765d0cb00bbb447d8dd5d0a354a3ea86b1
+Merge: f1a42c6 317a334
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 26 20:27:36 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit f1a42c6a6e91c2672f6dcf55031e65c2ffd2f1ca
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 26 20:27:25 2021 -0400
+
+    changing function implementation WORK IN PROGRESS INCOMPLETE
+
+commit 317a33422e598159e1c73b66aa931c39bd44bca8
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Mon Apr 26 19:52:33 2021 -0400
+
+    changed argument type passed into catch() for exception handling from Exception, which produced compile-time errors, to std::exception
+
+commit 6f6667297c5364df90d0db9d94f6d5f7431137ab
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 26 19:28:53 2021 -0400
+
+    fixing merge error
+
+commit 1420f41000cec4606e4fd8574f30e48c77e96b3e
+Merge: 6109114 b0866d9
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 26 19:27:28 2021 -0400
+
+    minor changes in Game
+
+commit 610911498ab53f5955d1f2aa031770cb0f47056b
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 26 19:25:21 2021 -0400
+
+    minor changes to member functions in game, fixing merge error
+
+commit b0866d961f9fe496220a6126a18b87809aa33396
+Author: John Han <jhan62@jhu.edu>
+Date:   Mon Apr 26 14:58:15 2021 -0700
+
+    made the two operators amigos
+
+commit 6c187232885fff04b3b6ec66b308b0a96068b628
+Author: John Han <jhan62@jhu.edu>
+Date:   Mon Apr 26 13:26:15 2021 -0700
+
+    implemented Game::operator>>
+
+commit 40c2fb0e6891f902e084b03e851e268b034900aa
+Author: John Han <jhan62@jhu.edu>
+Date:   Mon Apr 26 13:25:39 2021 -0700
+
+    implemented Game::operator>>
+
+commit 6f7a1d4355980ee8274d0d6c83b36fc700703a85
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Mon Apr 26 14:20:44 2021 -0400
+
+    implemented exception handling for illegal moves
+
+commit ca03030ef4d0459457147dc4472552bcf8580efa
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 23:11:40 2021 -0400
+
+    changed implementation of checkmate, moving the position of setting temp game object
+
+commit f273237e19ac9ee1eff6a49882546ff5a1ec6d54
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 23:06:48 2021 -0400
+
+    added helper function has_valid_moves to both Game files, added implementation for stalemate. (NOT YET TESTED)
+
+commit 6dc50b4b4782be0868961cd1e9cfff56bc9bb346
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 22:47:10 2021 -0400
+
+    created helper functions for testing if a move puts a player in check and if a move's path is blocked. added new implementation for in_check (old is commented out)
+
+commit 8a3e393f42304da29a30d86a01f68dcac89f828c
+Merge: 2d58cd8 3f47524
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 22:04:32 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit 2d58cd8f72ec01a47f71d3cbdb0a7b8d094763f0
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 22:04:14 2021 -0400
+
+    fixed a typo in function declaration
+
+commit 3f4752470f267279740dc4203aef55ca8931233c
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 19:35:22 2021 -0400
+
+    began implementing exception handling (try-and-catch blocks)
+
+commit 672686b1e39a6ca26fe6e2cba0303050db2b6137
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 19:15:55 2021 -0400
+
+    added in-line code comments to explain reasoning behind if branches + what code corresponds to what piece movement
+
+commit 8bd367dfa885ba6052206deac68974e515b51792
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 19:02:21 2021 -0400
+
+    added in-line code comments to explain reasoning behind if branches + what code corresponds to what piece movement
+
+commit 8a83a72d6eafc00009cac3039c10d467eb1c560d
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 18:57:15 2021 -0400
+
+    added in-line code comments to explain reasoning behind if branches + what code corresponds to what piece movement
+
+commit b043f47890a575f5ede3b861f65dd8735effec5f
+Merge: 72b432f 8617f9a
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 18:53:43 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit 72b432f514acb3ab228a3ff77867fb9063613190
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 18:53:31 2021 -0400
+
+    changed invalid use of former variables
+
+commit 8617f9a32eb4774a8d69691a62f4020c5f97adc4
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 18:50:36 2021 -0400
+
+    added in-line code comments to explain reasoning behind if branches + what code corresponds to what piece movement
+
+commit 70cdb8d779b5f83c5a14454511bd09a73992e999
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 18:44:48 2021 -0400
+
+    added in-line code comments to explain reasoning behind if branches + what code corresponds to what piece movement
+
+commit 19df6b66c99eff6d906edb8f851748c2e4bb94a4
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 18:33:58 2021 -0400
+
+    added in-line code comments to explain thought process + reasoning behind specific if brances + statements
+
+commit ab2cc7e234cce9b32fca67a724d92d9e08aeb6cf
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Sun Apr 25 18:15:25 2021 -0400
+
+    changed every instance of .begin() and .end() to .cbegin() and .cend(), due to the const_iterator being used within these functions
+
+commit fdf4f5f275fa2927e166b665a86ff09464863b4b
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sun Apr 25 17:46:03 2021 -0400
+
+    fully implemented make_move (NOT YET TESTED) and removed former helper function from .cpp and .h files
+
+commit a4c5c2b704cf63a3405547e55b708c2f14f77ee7
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sat Apr 24 21:03:45 2021 -0400
+
+    added helper function to board and additional implementation in Game
+
+commit 0067ee12516e2fa4740712b1dab202d08b345572
+Merge: ec1f20b d6f9ab0
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sat Apr 24 18:22:42 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-jhan62-rgondek1-wtong10
+
+commit ec1f20b2809fb4896994c1e7974a627eddd0492c
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sat Apr 24 18:22:19 2021 -0400
+
+    replaced definitions with declarations in header files for 4 pieces
+
+commit d6f9ab005ddb5b78f2747909f6ccd23bae8dafa6
+Merge: a2d6a24 8db4003
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 15:18:57 2021 -0700
+
+    finished rule of 3 for board
+
+commit a2d6a24eb7e14c185d6705e2e088006293f5eaac
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 15:18:10 2021 -0700
+
+    finished rule of 3 for board
+
+commit 8db400386e2a02eb327af7480050629164f13f10
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sat Apr 24 17:37:29 2021 -0400
+
+    added copy constructor, destructor, and assignment operator overload declarations in header file and definitions in Game.cpp
+
+commit d00f0980c7479ba44e1f4ff25a5896209b1528a1
+Author: Will Tong <wtong10@jh.edu>
+Date:   Sat Apr 24 14:53:39 2021 -0400
+
+    changed the has_valid_moves function (to valid_moves) to return a vector of possible positions a piece can move to. updated the declaration in the header file as well
+
+commit 21a9ad293433a07fc9d450a2a505345e2e6fe666
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 11:10:37 2021 -0700
+
+    finished an implementation of Game::in_mate()
+
+commit 8fcd989193462bec0665a8321aa0debce5b366a6
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 10:38:37 2021 -0700
+
+    fixed some pointer syntax in Game::in_stalemate
+
+commit d3f350eae2699785eee0f0eb9e83e2799e6e190d
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 10:35:36 2021 -0700
+
+    fixed some pointer syntax in Game::in_check
+
+commit dac09e43204f1ae8362e2cf9bed1d491af6cdda2
+Author: John Han <jhan62@jhu.edu>
+Date:   Sat Apr 24 10:29:19 2021 -0700
+
+    edge case for Board::has_valid_kings()
+
+commit 6357c49f4f4f79d5b605740673ec0ae9baf9bb34
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 22:41:19 2021 -0700
+
+    finished Board::display() (i think)
+
+commit 7a538cfc5dff521622e693911835f9d7e4da7429
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 22:20:01 2021 -0700
+
+    finished has-valid_kings
+
+commit 5cbd52f04a9b23179eea6bb25f539a8a452b8e53
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 22:05:17 2021 -0700
+
+    finished the helper methods is_valid_designator is_valid_position
+
+commit 7bbeaf3b6837c95e46c38ae85eb38996770c42d8
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 21:51:35 2021 -0700
+
+    added some helper functions
+
+commit d30948aba9f20de65d68c1be76d974135c22a936
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 20:31:14 2021 -0700
+
+    jk fixed operator
+
+commit 13194834d8477d96c34a103085e117d208b7e48d
+Author: John Han <jhan62@jhu.edu>
+Date:   Fri Apr 23 20:25:52 2021 -0700
+
+    implemented Board::operator()
+
+commit 1a401688ce95ddb24a709e11088d41077e7a0d81
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 21:55:32 2021 -0400
+
+    adjusted if-statement condition to reflect accurate 1st move (choice between 1 or 2 squares)
+
+commit 1ad258f49b65b65f884015677c45fba06aa713c7
+Author: Will Tong <wtong10@jh.edu>
+Date:   Fri Apr 23 19:12:45 2021 -0400
+
+    added updated Game.h file with new helper function declaration
+
+commit 3dee9338c5413b775ff899b3bed3316a3ca374ba
+Author: Will Tong <wtong10@jh.edu>
+Date:   Fri Apr 23 19:12:17 2021 -0400
+
+    added some implementation for stalemate and added a helper function to test for valid moves. INCOMPLETE
+
+commit bf9fbd893190138914f2badacaf4ff1e81b0cc80
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:45:51 2021 -0400
+
+    implemented legal_capture_shape function in Pawn.cpp
+
+commit 87d56ead745e1bfc42018cbf7e52085e12489435
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:38:45 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit c19cc3c23e0662af0119c52c65f3c498af34eeb3
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:38:26 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit d53ed19478aeb8744ee07306b3ac1f55547bcbf9
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:38:05 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit 93ebb52d259cd06ab3b58ca83878f9fc8264990d
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:37:46 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit 845d32a11b31a734a6b9314b72d3f7741da2baca
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:37:30 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit 82bd80251cef90ad8cc769e0708d922ca4f2004e
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:36:56 2021 -0400
+
+    made small adjustment to legal_move_shape function header spacing
+
+commit 6a8c9b069e90967633b9a33b066577684b4ad06d
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:21:41 2021 -0400
+
+    implemented legal_move_shape function for Pawn.cpp
+
+commit 115dd3323ad9f84f6229fc0abcde8eafe43e858c
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:21:22 2021 -0400
+
+    implemented legal_move_shape function for Queen.cpp
+
+commit 2e48ec2ee9effbfe731123757b9c92f43b067779
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:20:54 2021 -0400
+
+    implemented legal_move_shape function for Bishop.cpp
+
+commit 1fdb0dd225351c59beb3e75ecbd8615b8366ad90
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 14:20:30 2021 -0400
+
+    altered if-statement condition
+
+commit b2905cc2d60198377e72394405b3cff02560453c
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Fri Apr 23 11:15:12 2021 -0400
+
+    altered legal_move_shape implementation so that it does not handle invalid off-the-board inputs
+
+commit 61cd0160ea2838c15fbda6e8c872090716eb754e
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 23:26:14 2021 -0400
+
+    implemented a version of the legal_move_shape function in Rook.cpp that handles invalid off-the-board inputs (unsure if this is supposed to be done in this function?)
+
+commit 77a60de4a62dcaff7a0f72f5693b10ccb0019b64
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 22:53:37 2021 -0400
+
+    added team member names & JHEDs to top of modified Knight.cpp file
+
+commit 25bc7eaf14ae92de36b8c5a4077ae46623aa6d2e
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 22:52:24 2021 -0400
+
+    added team member names & JHEDs to top of modified King.cpp file
+
+commit bcdf700be70f2df730a9d9dbadf6600e28d9edcd
+Author: Will Tong <wtong10@jh.edu>
+Date:   Thu Apr 22 22:45:45 2021 -0400
+
+    changed implementation for in_check to only test opponent pieces
+
+commit 6d71e9aa8df0b26fb194722613633148adbfe6e5
+Author: Will Tong <wtong10@jh.edu>
+Date:   Thu Apr 22 17:30:11 2021 -0400
+
+    added implementation for in_check. NOT TESTED
+
+commit 13a0b1b23f91334a36787be780f28f507463d9ba
+Author: Will Tong <wtong10@jh.edu>
+Date:   Thu Apr 22 16:32:53 2021 -0400
+
+    added .txt files
+
+commit f081198c7cef24fc6a01150164731adc05cb564d
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 01:24:40 2021 -0400
+
+    added 'override' keyword to legal_move_shape function header
+
+commit 13b2ea4aafe999784c0a59081a3612c2399cb5af
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 01:23:34 2021 -0400
+
+    deleted 'replace this stub' exclaimer in legal_move_shape function body + added 'override' keyword to function declaration
+
+commit b86cdcb0e088d41b8e910d8ab3aa81d128baf07b
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 01:21:28 2021 -0400
+
+    last commit referenced legal_move_shape, as does this one >> i added 'override' keyword to function header following const
+
+commit bcad987e33fd894938bdfaa0e8ab8529dcba340f
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 01:19:42 2021 -0400
+
+    deleted 'replace this stub' exclaimer + added 'override' keyword
+
+commit f84d8731e0f6635e73c1f490b05ce44ba52841ee
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 00:54:40 2021 -0400
+
+    replaced variable names in legal_move_shape function for simplicity & clarity
+
+commit 997e56d0046140755876bdd25abb7eb2bd004549
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Thu Apr 22 00:47:34 2021 -0400
+
+    updated variable names in legal_move_shape for simplicity & clarity + restructured function to ensure remaining in the same place is deemed an illegal move
+
+commit 575e56f286403bca3f7b413c4e750838cae48a44
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 12:26:15 2021 -0400
+
+    implemented legal_move_shape function in Knight.cpp
+
+commit 8b0f09dae7a645e909bfe675530deb97226ff0fa
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 12:03:57 2021 -0400
+
+    corrected unchanged number within if statement
+
+commit 7401b14b5b9b59971a73162ad360089600f7e185
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 12:03:08 2021 -0400
+
+    replaced the positive and negative versions of two identical mathematical statements w/ one absolute value versionto simplify code
+
+commit 247e4440beb90d21792ed34583cc85465d3dd31d
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 11:56:39 2021 -0400
+
+    added a reminding comment to return to Piazza and see whether a CA/professor answered whether moving a piece to its current position is a legal move
+
+commit 1398a1f63b69a1fb096d7e82e2701c51f9472411
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 11:49:28 2021 -0400
+
+    made a few edits to legal_move_shape function's return statements + removed accidental redeclaration of char_to_ascii variables
+
+commit aa2682d63d9988f5c7416abce4f7c94c45ec131b
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Wed Apr 21 11:42:28 2021 -0400
+
+    began implementing legal_move_shape function within King.cpp
+
+commit 2cb7d74d5aedeb47018667eb901bd9318b57c1dd
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 20 23:27:36 2021 -0400
+
+    added 'King::' before function name after forgetting to do so earlier
+
+commit 9fd9b91c24d7c9aa81ebc85877bb31c0396be6d1
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 20 21:55:15 2021 -0400
+
+    pushing any unintentional changes
+
+commit 8d80159665e58f75f2d8801af2f43f54f805573c
+Author: Rita Gondek <rita.gondek@gmail.com>
+Date:   Tue Apr 20 21:54:56 2021 -0400
+
+    added legal_move_shape function header into file
+
+commit 3a2a1f6366e6e8b24edbdb75325fcb8c6903718c
+Author: John Han <jhan62@jhu.edu>
+Date:   Tue Apr 20 11:09:09 2021 -0700
+
+    created all cpp files for the Piece subclasses
+
+commit b10fb754b52977d758d0f09725d200efc417a9e8
+Author: Will Tong <wtong10@jh.edu>
+Date:   Mon Apr 19 19:52:13 2021 -0400
+
+    Pulled starter files from public repository
